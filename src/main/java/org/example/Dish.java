@@ -16,6 +16,6 @@ public class Dish {
 
     @Override
     public String toString() {
-        return "dish{"+"Dishname="+dishName+"DishId"+dishId+"DishPrice"+dishPrice;
+        return "dish{"+"Dishname:"+dishName+" DishId:"+dishId+" DishPrice:"+dishPrice+'\''+"}";
     }
 }

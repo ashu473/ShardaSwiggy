@@ -25,10 +25,10 @@ public class SwiggySharda {
                 String line;
                 Restro[] restroList=new Restro[50];
                 for(int restroCntr=0;(line= restroReader.readLine())!=null;restroCntr++){
-                        String restroData[]=line.split(",");
-                        restroList[restroCntr]=new Restro(Integer.valueOf(restroData[0]),restroData[1]);
+                        String[] restroData=line.split(",");
+                        restroList[restroCntr]=new Restro(Integer.parseInt(restroData[0]),restroData[1]);
                 }
-                for(Restro r:restroList){
+        for(Restro r:restroList){               ~
                         if(r==null)break;
                         System.out.println(r);
                 }
@@ -38,7 +38,6 @@ public class SwiggySharda {
                 SwiggySharda ss=new SwiggySharda();
                 ss.parseDishData();
                 ss.parseRestroData();
-
         }
 }
 

@@ -3,7 +3,7 @@ package org.example;
 public class Restro {
     int restroId;
     String restroName;
-    public Restro(int rstroId, String restroName){
+    public Restro(int restroId, String restroName){
         this.restroId=restroId;
         this.restroName=restroName;
     }
